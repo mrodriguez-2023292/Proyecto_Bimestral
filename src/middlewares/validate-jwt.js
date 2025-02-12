@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken"
-import Admin from "../models/admin.js"
+import Admin from "../admin/admin.model.js"
 import Client from "../client/client.model.js"
 
 export const validateJWTAdmin = async (req, res, next) =>{

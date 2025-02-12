@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "e07aba78-2c8d-4955-92f3-5d4417a39a6c",
+		"name": "API-PB2023292",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41830113"
+	},
+	"item": [
+		{
+			"name": "Auth Admin",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Adrian",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Morataya",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "elrayo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "elrayo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "45362718",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "n3@N2005",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/Mario/Downloads/profesor.jpg"
+								},
+								{
+									"key": "role",
+									"value": "CLIENT_ROLE",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:3000/storeSystem/v1/auth/registerAdmin"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"elrayo\",\r\n    \"password\":\"n3@N2005\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/storeSystem/v1/auth/loginAdmin"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth Client",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Diego",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Maradona",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "elpro",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "diego@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "43231232",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "m#@3S123",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/Mario/Downloads/alumno.png"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:3000/storeSystem/v1/auth/registerClient"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"elpro\",\r\n    \"password\":\"m#@3S123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/storeSystem/v1/auth/loginClient"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admins",
+			"item": [
+				{
+					"name": "Listar usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:3000/storeSystem/v1/admin/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clients",
+			"item": []
+		}
+	]
+}
